@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "skyreels-api"
+version = "0.1.0"
+description = "Python client for SkyReels-class long-form text-to-video and image-to-video through a hosted API on Synexa"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.8"
+authors = [{name = "skyreels-dev"}]
+keywords = ["ai api", "seedance-2.5", "skyreels", "skyreels api", "skyreels python", "synexa", "wan2.2"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = ["httpx>=0.24"]
+
+[project.urls]
+Homepage = "https://github.com/skyreels-dev/skyreels-api"
+Documentation = "https://skyreels-dev.github.io/skyreels-api/"
+"Hosted model" = "https://synexa.ai/explore/bytedance/seedance-2.5?utm_source=github&utm_medium=ugc&utm_campaign=skyreels-dev&utm_content=pyproject&utm_term=tier-a"
+
+[tool.setuptools.packages.find]
+include = ["skyreels_api*"]
